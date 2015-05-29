@@ -1,0 +1,22 @@
+Source: libcrypt-rc5-perl
+Section: perl
+Priority: optional
+Maintainer: Jani Hakala <jjhakala@gmail.com>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/Crypt-RC5
+
+Package: libcrypt-rc5-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: Perl implementation of the RC5 encryption algorithm.
+ RC5 is a fast block cipher designed by Ronald Rivest for RSA Data Security
+ (now RSA Security) in 1994. It is a parameterized algorithm with a variable
+ block size, a variable key size, and a variable number of rounds. This
+ particular implementation is 32 bit. As such, it is suggested that a minimum
+ of 12 rounds be performed.
+ .
+ Core logic based on "RC5 in 6 lines of perl" at http://www.cypherspace.org
+ .
+ This description was automagically extracted from the module by dh-make-perl.

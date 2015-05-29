@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+TMP = $(CURDIR)/debian/tmp
+
+override_dh_auto_configure:
+	perl Makefile.PL INSTALLDIRS=vendor
+
+override_dh_auto_install:
+	make pure_install DESTDIR=$(TMP)
+
+override_dh_clean:
+	rm -f Makefile.old Makefile MANIFEST
+	dh_clean
+
+%:
+	dh $@
+
+
+%:
+	dh $@

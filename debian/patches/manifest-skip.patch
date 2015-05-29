@@ -1,0 +1,13 @@
+--- /dev/null
++++ libcrypt-rc5-perl-2.00/MANIFEST.SKIP
+@@ -0,0 +1,9 @@
++MANIFEST\.
++^Makefile$
++^MakeMaker-\d
++^pm_to_blib$
++
++^blib/
++^debian/
++
++\B.git\b
+
